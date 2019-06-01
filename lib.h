@@ -14,6 +14,6 @@ using namespace std;
 
 int calcshow();
 
-
+int menu();
 
 #endif // LIB
