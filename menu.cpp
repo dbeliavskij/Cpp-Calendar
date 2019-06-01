@@ -11,21 +11,24 @@ int menu () {
     switch (choose) {
 
         case 1:
+            system("CLS");
             time_t rawtime;
             rawtime=time(NULL);
             struct tm * loctime;
             loctime=localtime(&rawtime);
             cout<<"Showing plan for "<<loctime -> tm_mday<<" day:\n";
             month[loctime -> tm_mday].showplan();
+            system("PAUSE");
             break;
 
         case 2:
 
             break;
+
         case 3:
             int d, h;
             string text;
-
+            system("CLS");
             cout<<"Please input a day, where you want to create a plan\n";
             cin>>d;
             cout<<"Please input a hour, where you want to create a plan\n";

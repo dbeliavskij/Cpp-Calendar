@@ -2,7 +2,7 @@
 
 
 int calcshow() {
-
+    system("CLS");
     time_t rawtime;
     rawtime=time(NULL);
     struct tm * loctime;
