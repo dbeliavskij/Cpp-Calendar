@@ -9,6 +9,7 @@ class Day
         Day();
         void createplan(int h, string text);
         void showplan();
+        int isplan();
 
     protected:
         string plan [24];
@@ -16,6 +17,7 @@ class Day
     private:
 };
 
-static Day month[29];
-
+static Day month[30];
+int calcshow(Day month[]);
+int menu(Day month[]);
 #endif // DAY_H

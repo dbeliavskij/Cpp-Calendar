@@ -5,8 +5,8 @@ int main()
 {
 
     while (true) {
-        calcshow();
-        menu();
+        calcshow(month);
+        menu(month);
     }
 
     return 0;

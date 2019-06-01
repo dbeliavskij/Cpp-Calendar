@@ -3,6 +3,7 @@
 
 
 #include <iostream>
+#include <windows.h>
 #include <time.h>
 #include <iomanip>
 #include <vector>
@@ -14,7 +15,6 @@ using namespace std;
 #include "day.h"
 
 
-int calcshow();
-int menu();
+
 
 #endif // LIB

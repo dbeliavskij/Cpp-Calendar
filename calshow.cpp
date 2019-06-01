@@ -1,7 +1,10 @@
 #include "lib.h"
 
 
-int calcshow() {
+int calcshow(Day month[]) {
+
+    HANDLE  hConsole;
+    hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     system("CLS");
     time_t rawtime;
     rawtime=time(NULL);
@@ -70,18 +73,25 @@ int calcshow() {
         cout<<setfill(' ')<<'*'<<setw((consw/7))<<setfill(' ');
     }
     for (int z=0; z<2; z++) {
-        cout<<setfill(' ')<<'*'<<setw((consw/7)-1)<<setfill(' ')<<d+1;
+        cout<<setfill(' ')<<'*';
+            if (month[d].isplan()==1){
+                SetConsoleTextAttribute(hConsole, 2);
+            }
+        cout<<setw((consw/7)-1)<<setfill(' ')<<d+1;
         d++;
+        SetConsoleTextAttribute(hConsole, 7);
     }
     cout<<"*\n";
     for (int i=0; i<4; i++) {
             for (int a = 0; a<7; a++) {
-
-            cout<<setfill(' ')<<'*'<<setw((consw/7)-1)<<setfill(' ')<<d+1;
-
-            d++;
-
+        cout<<setfill(' ')<<'*';
+            if (month[d].isplan()==1){
+                SetConsoleTextAttribute(hConsole, 2);
             }
+        cout<<setw((consw/7)-1)<<setfill(' ')<<d+1;
+        d++;
+        SetConsoleTextAttribute(hConsole, 7);
+    }
         cout<<"*\n";
     }
 

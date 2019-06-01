@@ -1,6 +1,6 @@
 #include "lib.h"
 
-int menu () {
+int menu (Day month[]) {
     int d, h;
     int choose=0;
     cout<<"Please choose an action or Ctrl + C to quit\n"
@@ -19,6 +19,7 @@ int menu () {
             loctime=localtime(&rawtime);
             cout<<"Showing plan for "<<loctime -> tm_mday<<" day:\n";
             month[loctime -> tm_mday-1].showplan();
+            cout<<month[loctime -> tm_mday-1].isplan();
             system("PAUSE");
             break;
 

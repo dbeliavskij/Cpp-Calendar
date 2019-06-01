@@ -14,3 +14,15 @@ void Day::showplan() {
         cout<<setfill(' ')<<setw(2)<<right<<a<<" h: "<<setw(50)<<left<<plan[a]<<"\n";
     }
 }
+
+int Day::isplan() {
+    for (int a=0; a<24; a++) {
+        if (plan[a]=="No plans yet") {
+
+        }
+        else {
+            return 1;
+        }
+    }
+        return 0;
+}
