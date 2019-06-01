@@ -8,6 +8,8 @@
 #include <iomanip>
 #include <vector>
 #include <string>
+#define conscolor 9
+#define plancolor 2
 #define consw 84
 
 using namespace std;

@@ -3,13 +3,14 @@
 
 int calcshow(Day month[]) {
 
-    HANDLE  hConsole;
-    hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     system("CLS");
     time_t rawtime;
     rawtime=time(NULL);
     struct tm * loctime;
     loctime=localtime(&rawtime);
+    HANDLE  hConsole;
+    hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleTextAttribute(hConsole, conscolor);
     switch (loctime -> tm_mon) {
     case 0:
         cout<<setfill(' ')<<setw(consw/2)<<right<<"January"<<endl;
@@ -75,28 +76,28 @@ int calcshow(Day month[]) {
     for (int z=0; z<2; z++) {
         cout<<setfill(' ')<<'*';
             if (month[d].isplan()==1){
-                SetConsoleTextAttribute(hConsole, 2);
+                SetConsoleTextAttribute(hConsole, plancolor);
             }
         cout<<setw((consw/7)-1)<<setfill(' ')<<d+1;
         d++;
-        SetConsoleTextAttribute(hConsole, 7);
+        SetConsoleTextAttribute(hConsole, conscolor);
     }
     cout<<"*\n";
     for (int i=0; i<4; i++) {
             for (int a = 0; a<7; a++) {
         cout<<setfill(' ')<<'*';
             if (month[d].isplan()==1){
-                SetConsoleTextAttribute(hConsole, 2);
+                SetConsoleTextAttribute(hConsole, plancolor);
             }
         cout<<setw((consw/7)-1)<<setfill(' ')<<d+1;
         d++;
-        SetConsoleTextAttribute(hConsole, 7);
+        SetConsoleTextAttribute(hConsole, conscolor);
     }
         cout<<"*\n";
     }
 
     cout<<setw(consw+2)<<setfill('*')<<"\n";
-
+    SetConsoleTextAttribute(hConsole, 7);
     return 0;
 
 }
