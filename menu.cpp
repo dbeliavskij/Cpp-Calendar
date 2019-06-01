@@ -3,7 +3,7 @@
 int menu () {
     int d, h;
     int choose=0;
-    cout<<"Please choose an action\n"
+    cout<<"Please choose an action or Ctrl + C to quit\n"
     <<"1. View plan for today\n"
     <<"2. View plan for custom day\n"
     <<"3. Create plan\n";
@@ -18,7 +18,7 @@ int menu () {
             struct tm * loctime;
             loctime=localtime(&rawtime);
             cout<<"Showing plan for "<<loctime -> tm_mday<<" day:\n";
-            month[loctime -> tm_mday].showplan();
+            month[loctime -> tm_mday-1].showplan();
             system("PAUSE");
             break;
 

@@ -3,6 +3,7 @@
 
 int main()
 {
+
     while (true) {
         calcshow();
         menu();
