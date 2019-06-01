@@ -12,8 +12,9 @@ using namespace std;
 
 #include "day.h"
 
-int calcshow();
 
+int calcshow();
+int createplan();
 int menu();
 
 #endif // LIB

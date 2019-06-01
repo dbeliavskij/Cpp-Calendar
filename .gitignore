@@ -6,3 +6,5 @@ day.h.save-failed
 calshow.cpp.save-failed
 bin/
 obj/
+calshow.cpp.save-failed createplan.cpp.save-failed
+createplan.cpp.save-failed

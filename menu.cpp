@@ -11,14 +11,17 @@ int menu () {
     switch (choose) {
 
         case 1:
-            todayplan();
+//            todayplan();
+                month[0].showplan();
             break;
 
         case 2:
-            customplan();
+//            customplan();
             break;
         case 3:
             createplan();
+            break;
+
 
 
     }
