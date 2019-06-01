@@ -3,55 +3,55 @@
 
 int calcshow() {
 
-time_t rawtime;
+    time_t rawtime;
     rawtime=time(NULL);
     struct tm * loctime;
     loctime=localtime(&rawtime);
     switch (loctime -> tm_mon) {
     case 0:
-        cout<<setw(consw/2)<<right<<"January"<<endl;
+        cout<<setfill(' ')<<setw(consw/2)<<right<<"January"<<endl;
         break;
 
     case 1:
-        cout<<setw(consw/2)<<right<<"February"<<endl;
+        cout<<setfill(' ')<<setw(consw/2)<<right<<"February"<<endl;
         break;
     case 2:
-        cout<<setw(consw/2)<<right<<"March"<<endl;
+        cout<<setfill(' ')<<setw(consw/2)<<right<<"March"<<endl;
         break;
     case 3:
-        cout<<setw(consw/2)<<right<<"April"<<endl;
+        cout<<setfill(' ')<<setw(consw/2)<<right<<"April"<<endl;
         break;
 
     case 4:
-        cout<<setw(consw/2)<<right<<"May"<<endl;
+        cout<<setfill(' ')<<setw(consw/2)<<right<<"May"<<endl;
         break;
 
     case 5:
-        cout<<setw(consw/2)<<right<<"June"<<endl;
+        cout<<setfill(' ')<<setw(consw/2)<<right<<"June"<<endl;
         break;
 
     case 6:
-        cout<<setw(consw/2)<<right<<"Jule"<<endl;
+        cout<<setfill(' ')<<setw(consw/2)<<right<<"Jule"<<endl;
         break;
 
     case 7:
-        cout<<setw(consw/2)<<right<<"August"<<endl;
+        cout<<setfill(' ')<<setw(consw/2)<<right<<"August"<<endl;
         break;
 
     case 8:
-        cout<<setw(consw/2)<<right<<"September"<<endl;
+        cout<<setfill(' ')<<setw(consw/2)<<right<<"September"<<endl;
         break;
 
     case 9:
-        cout<<setw(consw/2)<<right<<"October"<<endl;
+        cout<<setfill(' ')<<setw(consw/2)<<right<<"October"<<endl;
         break;
 
     case 10:
-        cout<<setw(consw/2)<<right<<"November"<<endl;
+        cout<<setfill(' ')<<setw(consw/2)<<right<<"November"<<endl;
         break;
 
     case 11:
-        cout<<setw(consw/2)<<right<<"December"<<endl;
+        cout<<setfill(' ')<<setw(consw/2)<<right<<"December"<<endl;
         break;
     }
     cout<<setw(consw+2)<<setfill('*')<<"\n";

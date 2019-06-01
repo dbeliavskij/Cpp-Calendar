@@ -1,9 +1,9 @@
 #include "day.h"
 
 Day::Day() {
-    for (int a=0; a<24; a++) {
-        plan[a]="No plans yet";
-    }
+//    for (int a=0; a<24; a++) {
+//        plan[a]="No plans yet";
+//    }
 }
 
 void Day::createplan(int h, string text) {

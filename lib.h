@@ -14,7 +14,6 @@ using namespace std;
 
 
 int calcshow();
-int createplan();
 int menu();
 
 #endif // LIB

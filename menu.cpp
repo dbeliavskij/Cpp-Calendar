@@ -12,14 +12,22 @@ int menu () {
 
         case 1:
 //            todayplan();
-                month[0].showplan();
+                month[1].showplan();
             break;
 
         case 2:
 //            customplan();
             break;
         case 3:
-            createplan();
+            int d, h;
+            string text="Hi";
+
+            cout<<"Please input a day, where you want to create a plan\n";
+            cin>>d;
+            cout<<"Please input a hour, where you want to create a plan\n";
+            cin>>h;
+            cout<<"Please input text of a plan\n";
+            month[d-1].createplan(h, text);
             break;
 
 

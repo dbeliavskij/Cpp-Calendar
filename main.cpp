@@ -3,9 +3,10 @@
 
 int main()
 {
-    calcshow();
-    menu();
-
+    while (true) {
+        calcshow();
+        menu();
+    }
 
     return 0;
 }
