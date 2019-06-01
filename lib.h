@@ -6,6 +6,7 @@
 #include <time.h>
 #include <iomanip>
 #include <vector>
+#include <string>
 #define consw 84
 
 using namespace std;
