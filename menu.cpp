@@ -1,6 +1,7 @@
 #include "lib.h"
 
 int menu () {
+    int d, h;
     int choose=0;
     cout<<"Please choose an action\n"
     <<"1. View plan for today\n"
@@ -22,11 +23,14 @@ int menu () {
             break;
 
         case 2:
-
+            system("CLS");
+            cout<<"Please input a day, which you want to see\n";
+            cin>>d;
+            month[d-1].showplan();
+            system("PAUSE");
             break;
 
         case 3:
-            int d, h;
             string text;
             system("CLS");
             cout<<"Please input a day, where you want to create a plan\n";
